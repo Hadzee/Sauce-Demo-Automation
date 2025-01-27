@@ -1,0 +1,26 @@
+Title: Checkout Test for Sauce Demo
+
+Description: 
+As a user, I should be able to successfully add products to the cart, enter my information on the checkout page and order the products.
+This test is referring to test_checkout.py
+
+Test Steps:
+
+GIVEN that I log in to Sauce Demo
+THEN I add the Sauce Labs Backpack to the cart
+THEN I add the Sauce Labs Bike Light to the cart
+THEN I add the Sauce Labs Bolt T-Shirt to the cart
+AND I navigate to the shopping cart
+AND I click on the Checkout button
+THEN I enter the first name
+AND I enter the last name
+AND I enter the zipcode
+THEN I click on Continue
+AND I verify thast all items are in the list
+AND I verify that the total price is correct
+THEN I click on the Finish button
+AND I get the confirmation message "Thank you for your order!"
+THEN I click on the Back Home button
+THEN I click on the Menu button
+AND I select "Logout"
+THEN the Sauce Demo Login page is displayed

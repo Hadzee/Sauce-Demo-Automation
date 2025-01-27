@@ -1,0 +1,14 @@
+Title: Login Test for Sauce Demo
+
+Description: 
+As a user, I should be able to successfully log in and log out of Sauce Demo. This test is for test_login.py
+
+Test Steps:
+
+GIVEN that I navigate to the Sauce Demo page
+WHEN I enter a username
+THEN I enter a password and click on "Login" button
+THEN the Sauce Demo Home page is displayed
+WHEN I click on the Menu button
+AND I select "Logout"
+THEN the Sauce Demo Login page is displayed

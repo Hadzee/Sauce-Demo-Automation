@@ -1,0 +1,19 @@
+Title: Sorting Test for Sauce Demo
+
+Description: 
+As a user, I should be able to successfully sort the Sauce Demo products. This test is referring to test_sorting.py
+
+Test Steps:
+
+GIVEN that I log in to Sauce Demo
+WHEN I sort the products by "A to Z" in the top right corner
+THEN I can see that the products are sorted properly
+WHEN I sort the products by "Z to A"
+THEN I can see that the products are sorted properly, "Z to A"
+WHEN I sort the products by price "low to high"
+THEN I can see that the products are sorted properly by price, low to high
+WHEN I sort the products by price "high to low"
+THEN I can see that the products are sorted properly by price, high to low
+THEN I click on the Menu button
+AND I select "Logout"
+THEN the Sauce Demo Login page is displayed

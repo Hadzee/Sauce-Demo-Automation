@@ -1,0 +1,18 @@
+Title: Remove From Cart Test for Sauce Demo
+
+Description: 
+As a user, I should be able to successfully add and remove products from the Sauce Demo cart. This test is referring to test_remove_from_cart.py
+
+Test Steps:
+
+GIVEN that I log in to Sauce Demo
+THEN I add the Sauce Labs Backpack to the cart
+THEN I add the Sauce Labs Bike Light to the cart
+THEN I add the Sauce Labs Bolt T-Shirt to the cart
+AND I navigate to the shopping cart
+AND I verify that all of the product are added
+THEN I remove all of the products from the cart, one by one
+AND I verify that the products are removed properly
+THEN I click on the Menu button
+AND I select "Logout"
+THEN the Sauce Demo Login page is displayed

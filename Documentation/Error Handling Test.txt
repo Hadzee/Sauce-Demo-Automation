@@ -1,0 +1,26 @@
+Title: Error Handling Test for Sauce Demo
+
+Description: 
+As a user, I should be able to go through the error handling of the Sauce Demo. This test is referring to test_error_handling.py
+
+Test Steps:
+
+GIVEN that I try to log in with a locked out user to Sauce Demo
+THEN I get the error message "Epic sadface: Sorry, this user has been locked out."
+WHEN I try to log in with a valid username, but an incorrect password
+THEN I get the error message "Epic sadface: Username and password do not match any user in this service"
+THEN I enter the correct username and password and click on login button
+THEN I add the Sauce Labs Backpack to the cart
+THEN I add the Sauce Labs Bike Light to the cart
+THEN I add the Sauce Labs Bolt T-Shirt to the cart
+AND I navigate to the shopping cart
+AND I click on the Checkout button
+WHEN I click on the Continue button on the checkout page, without entering any info
+THEN I get the error message "Error: First Name is required"
+WHEN I enter the name, but leave the rest of the fields empty and click on continue
+THEN I get the error message "Error: Last Name is required"
+WHEN I enter the last name, but leave the zipcode field empty and click on continue
+THEN I get the error message "Error: Postal Code is required"
+THEN I click on the Menu button
+AND I select "Logout"
+THEN the Sauce Demo Login page is displayed
